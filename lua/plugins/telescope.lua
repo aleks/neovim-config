@@ -8,6 +8,7 @@ return {
       { "<leader>h", "<cmd>Telescope oldfiles<cr>", desc = "Recently opened files" },
       { "<leader>j", "<cmd>Telescope jumplist<cr>", desc = "Show jumplist" },
       { "<leader>r", "<cmd>Telescope registers<cr>", desc = "Show register" },
+      { "<leader>rg", "<cmd>Telescope grep_string<cr>", desc = "Find string under cursor in working dir" },
       { "<leader>b", "<cmd>Telescope buffers<cr>", desc = "List open buffers" },
       { "<leader>m", "<cmd>Telescope marks<cr>", desc = "List marks" },
     },
