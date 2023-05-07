@@ -4,6 +4,7 @@ return {
     version = false,
     keys = {
       { "<leader>t", "<cmd>Telescope find_files<cr>", desc = "Fuzzy find files" },
+      { "<leader>f", "<cmd>Telescope live_grep<cr>", desc = "Fuzzy find file contents" },
       { "<leader>h", "<cmd>Telescope oldfiles<cr>", desc = "Recently opened files" },
       { "<leader>j", "<cmd>Telescope jumplist<cr>", desc = "Show jumplist" },
       { "<leader>r", "<cmd>Telescope registers<cr>", desc = "Show register" },
