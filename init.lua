@@ -5,3 +5,6 @@ vim.g.localleader = '\\'
 -- Modules
 require('options')
 require('keymaps')
+
+-- Plugins
+require('lazyvim')
