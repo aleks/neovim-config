@@ -12,6 +12,7 @@ vim.opt.relativenumber = true
 vim.opt.numberwidth = 4
 vim.opt.showcmd = true
 vim.opt.history = 50
+vim.opt.swapfile = false
 
 -- UI
 vim.opt.laststatus = 2
