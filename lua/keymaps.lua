@@ -10,9 +10,6 @@ vim.keymap.set("n", "<s-tab>", ":tabp<cr>", { desc = "Move to previous tab" })
 vim.keymap.set("n", "<leader>s", ":split<cr>", { desc = "Split buffer" })
 vim.keymap.set("n", "<leader>vs", ":vsplit<cr>", { desc = "Vertically split buffer" })
 
--- Register
-vim.keymap.set("n", ";", ":reg<cr>", { desc = "Open register" })
-
 -- Moving between windows
 vim.keymap.set("n", "<C-h>", "<C-W>h", { desc = "Go to left window" })
 vim.keymap.set("n", "<C-j>", "<C-W>j", { desc = "Go to lower window" })

@@ -13,6 +13,7 @@ vim.opt.numberwidth = 4
 vim.opt.showcmd = true
 vim.opt.history = 50
 vim.opt.swapfile = false
+vim.opt.mouse = ""
 
 -- UI
 vim.opt.laststatus = 2
