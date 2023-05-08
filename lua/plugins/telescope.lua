@@ -2,6 +2,9 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     version = false,
+    dependencies = {
+      { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+    },
     keys = {
       { "<leader>t", "<cmd>Telescope find_files<cr>", desc = "Fuzzy find files" },
       { "<leader>f", "<cmd>Telescope live_grep<cr>", desc = "Fuzzy find file contents" },
@@ -15,9 +18,21 @@ return {
       { "<leader>ts", "<cmd>Telescope treesitter<cr>", desc = "Show treesitter symbols" },
     },
     opts = {
+      extensions = {
+        fzf = {
+          fuzzy = true,                    -- false will only do exact matching
+          override_generic_sorter = true,  -- override the generic sorter
+          override_file_sorter = true,     -- override the file sorter
+          case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+                                           -- the default case_mode is "smart_case"
+        }
+      },
       defaults = {
         mappings = {
           i = {
+            ["<esc>"] = function(...)
+              return require("telescope.actions").close(...)
+            end,
             ["<C-j>"] = function(...)
               return require("telescope.actions").move_selection_next(...)
             end,
@@ -28,5 +43,10 @@ return {
         },
       },
     },
+    config = function(_, opts)
+      local telescope = require("telescope")
+      telescope.setup(opts)
+      telescope.load_extension("fzf")
+    end,
   },
 }
