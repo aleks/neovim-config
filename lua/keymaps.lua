@@ -7,7 +7,7 @@ vim.keymap.set("n", "<tab>", ":tabn<cr>", { desc = "Move to next tab" })
 vim.keymap.set("n", "<s-tab>", ":tabp<cr>", { desc = "Move to previous tab" })
 
 -- Splits
-vim.keymap.set("n", "<leader>s", ":split<cr>", { desc = "Split buffer" })
+vim.keymap.set("n", "<leader>ss", ":split<cr>", { desc = "Split buffer" })
 vim.keymap.set("n", "<leader>vs", ":vsplit<cr>", { desc = "Vertically split buffer" })
 
 -- Moving between windows
