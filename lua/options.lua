@@ -1,6 +1,5 @@
 -- Theme
 vim.opt.syntax = "on"
-vim.opt.termguicolors = true
 
 -- Files
 vim.opt.encoding = 'utf8'
