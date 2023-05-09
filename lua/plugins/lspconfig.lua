@@ -45,7 +45,7 @@ return {
       local servers = {
         'solargraph',
         'tsserver',
-        'eslint',
+        -- 'eslint',
         'gopls',
         'rust_analyzer'
       }
@@ -101,7 +101,7 @@ return {
         },
         sources = {
           { name = 'nvim_lsp' },
-          { name = 'luasnip' },
+          -- { name = 'luasnip' },
           {
             name = 'buffer',
             option = {
