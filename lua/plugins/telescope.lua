@@ -10,12 +10,12 @@ return {
       { "<leader>f", "<cmd>Telescope live_grep<cr>", desc = "Fuzzy find file contents" },
       { "<leader>h", "<cmd>Telescope oldfiles<cr>", desc = "Recently opened files" },
       { "<leader>j", "<cmd>Telescope jumplist<cr>", desc = "Show jumplist" },
-      { "<leader>r", "<cmd>Telescope registers<cr>", desc = "Show register" },
+      { "<leader>rs", "<cmd>Telescope registers<cr>", desc = "Show register" },
       { "<leader>rg", "<cmd>Telescope grep_string<cr>", desc = "Find string under cursor in working dir" },
       { "<leader>b", "<cmd>Telescope buffers<cr>", desc = "List open buffers" },
       { "<leader>m", "<cmd>Telescope marks<cr>", desc = "List marks" },
       { "<leader>k", "<cmd>Telescope keymaps<cr>", desc = "Show keymaps" },
-      { "<leader>l", "<cmd>Telescope treesitter<cr>", desc = "Show treesitter symbols" },
+      { "<leader>lt", "<cmd>Telescope treesitter<cr>", desc = "Show treesitter symbols" },
     },
     opts = {
       extensions = {
