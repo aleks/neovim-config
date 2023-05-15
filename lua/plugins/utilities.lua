@@ -13,6 +13,9 @@ return {
   },
   {
     "tpope/vim-fugitive",
+    keys = {
+      { "<leader>gb", "<cmd>Git blame<cr>", desc = "Show git blame" }
+    },
   },
   {
     "ruanyl/vim-gh-line",
@@ -21,6 +24,7 @@ return {
       vim.g.gh_line_blame_map_default = 1
       vim.g.gh_use_canonical = 1
       vim.g.gh_line_map = '<leader>gh'
+      vim.g.gh_line_blame_map = '<leader>ghb'
     end,
   },
   {
