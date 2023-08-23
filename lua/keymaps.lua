@@ -11,10 +11,11 @@ vim.keymap.set("n", "<leader>ss", ":split<cr>", { desc = "Split buffer" })
 vim.keymap.set("n", "<leader>vs", ":vsplit<cr>", { desc = "Vertically split buffer" })
 
 -- Moving between windows
-vim.keymap.set("n", "<C-h>", "<C-W>h", { desc = "Go to left window" })
-vim.keymap.set("n", "<C-j>", "<C-W>j", { desc = "Go to lower window" })
-vim.keymap.set("n", "<C-k>", "<C-W>k", { desc = "Go to upper window" })
-vim.keymap.set("n", "<C-l>", "<C-W>l", { desc = "Go to right window" })
+-- Note: Replaced by vim-tmux-navigator plugin
+-- vim.keymap.set("n", "<C-h>", "<C-W>h", { desc = "Go to left window" })
+-- vim.keymap.set("n", "<C-j>", "<C-W>j", { desc = "Go to lower window" })
+-- vim.keymap.set("n", "<C-k>", "<C-W>k", { desc = "Go to upper window" })
+-- vim.keymap.set("n", "<C-l>", "<C-W>l", { desc = "Go to right window" })
 
 -- Resizing windows
 vim.keymap.set("n", "<C-up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
