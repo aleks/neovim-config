@@ -24,8 +24,5 @@ return {
         },
       },
     },
-    keys = {
-      { "<F12>", "<cmd>Neotree toggle<cr>", desc = "Toggle NeoTree" }
-    },
   },
 }
