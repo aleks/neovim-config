@@ -16,6 +16,7 @@ return {
       { "<leader>m", "<cmd>Telescope marks<cr>", desc = "List marks" },
       { "<leader>k", "<cmd>Telescope keymaps<cr>", desc = "Show keymaps" },
       { "<leader>lt", "<cmd>Telescope treesitter<cr>", desc = "Show treesitter symbols" },
+      { "<leader>gs", "<cmd>Telescope git_status <cr>", desc = "Show git status" },
     },
     opts = {
       extensions = {
