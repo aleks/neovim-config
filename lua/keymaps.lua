@@ -3,8 +3,8 @@
 -- vim.api.nvim_set_keymap('n','<F12>', [[:NERDTreeToggle]], {})
 
 -- Tabs
-vim.keymap.set("n", "<tab>", ":tabn<cr>", { desc = "Move to next tab" })
-vim.keymap.set("n", "<s-tab>", ":tabp<cr>", { desc = "Move to previous tab" })
+vim.keymap.set("n", "<C-t>", ":tabn<cr>", { desc = "Move to next tab" })
+vim.keymap.set("n", "<s-t>", ":tabp<cr>", { desc = "Move to previous tab" })
 
 -- Splits
 vim.keymap.set("n", "<leader>ss", ":split<cr>", { desc = "Split buffer" })
