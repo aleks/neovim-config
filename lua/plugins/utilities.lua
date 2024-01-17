@@ -51,4 +51,13 @@ return {
       require("which-key").setup()
     end,
   },
+  {
+    "mbbill/undotree",
+    keys = {
+      { "<leader>ud", "<cmd>UndotreeToggle<cr>", desc = "Open Undo Tree" }
+    },
+    init = function()
+      vim.g.undotree_WindowLayout = 2
+    end,
+  }
 }
