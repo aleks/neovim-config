@@ -26,6 +26,8 @@ return {
         "tsx",
         "typescript",
         "yaml",
+        "hcl",
+        "terraform",
       },
       incremental_selection = {
         enable = true,
