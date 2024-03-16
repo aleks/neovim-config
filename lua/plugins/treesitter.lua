@@ -28,6 +28,7 @@ return {
         "yaml",
         "hcl",
         "terraform",
+        "go",
       },
       incremental_selection = {
         enable = true,
