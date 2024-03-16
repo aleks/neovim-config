@@ -12,7 +12,7 @@ return {
     end,
   },
   {
-    "tpope/vim-fugitive",
+    "tpope/vim-fugitive", -- TODO: Replace with https://github.com/kylechui/nvim-surround
     keys = {
       { "<leader>gb", "<cmd>Git blame<cr>", desc = "Show git blame" }
     },
