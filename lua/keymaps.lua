@@ -7,8 +7,8 @@ vim.keymap.set("n", "<C-t>", ":tabn<cr>", { desc = "Move to next tab" })
 vim.keymap.set("n", "<s-t>", ":tabp<cr>", { desc = "Move to previous tab" })
 
 -- Quickfix list
-vim.keymap.set("n", "<C-[>", ":cnext<cr>", { desc = "Move to next quickfix list item" })
-vim.keymap.set("n", "<C-]>", ":cprev<cr>", { desc = "Move to previous quickfix list item" })
+vim.keymap.set("n", "<C-[>", ":cnext<cr>zz", { desc = "Move to next quickfix list item" })
+vim.keymap.set("n", "<C-]>", ":cprev<cr>zz", { desc = "Move to previous quickfix list item" })
 
 -- Splits
 vim.keymap.set("n", "<leader>ss", ":split<cr>", { desc = "Split buffer" })
