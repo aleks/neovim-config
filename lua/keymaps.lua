@@ -38,3 +38,6 @@ vim.keymap.set("n", "N", "Nzz", { desc = "Previous found item, centered" })
 
 -- Clipboard
 vim.keymap.set("v", "<leader>cb", '"*y', { desc = "Copy to system clipboard" })
+
+-- Print debugging
+vim.keymap.set("n", "<leader>cl", "iconsole.log()", { desc = "Insert console.log" })
