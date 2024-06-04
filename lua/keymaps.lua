@@ -28,8 +28,9 @@ vim.keymap.set("n", "<C-left>", "<cmd>vertical resize -2<cr>", { desc = "Decreas
 vim.keymap.set("n", "<C-right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
 -- Centered scrolling
-vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down, centered" })
-vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up, centered" })
+-- Replaced by harpoon prev/next for now
+-- vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down, centered" })
+-- vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up, centered" })
 
 -- Searching
 vim.keymap.set("n", "//", ":nohlsearch<cr>", { desc = "Clear search highlight" })
