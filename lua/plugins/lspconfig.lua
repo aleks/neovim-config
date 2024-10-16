@@ -44,7 +44,7 @@ return {
 
       local servers = {
         'solargraph',
-        'tsserver',
+        'ts_ls',
         -- 'eslint',
         'gopls',
         'rust_analyzer'
