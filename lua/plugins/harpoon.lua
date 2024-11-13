@@ -60,18 +60,6 @@ return {
           desc = "Harpoon: previous file"
         },
       }
-
-      -- Map keys <leader>1-5 to Harpoon files
-      for i = 1, 5 do
-        table.insert(keys, {
-          "<leader>" .. i,
-          function()
-            require("harpoon"):list():select(i)
-          end,
-          desc = "Harpoon to File " .. i,
-        })
-      end
-
       return keys
     end
   }
