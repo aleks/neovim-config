@@ -37,15 +37,11 @@ return {
       --
       -- solargraph: gem install --user-install solargraph
       -- tsserver: npm install -g typescript typescript-language-server
-      -- eslint: npm i -g vscode-langservers-extracted
-      -- volar: npm install -g @volar/vue-language-server
       -- gopls: go install golang.org/x/tools/gopls@latest
       -- rust_analyzer: rustup component add rust-analyzer
-
       local servers = {
         'solargraph',
         'ts_ls',
-        -- 'eslint',
         'gopls',
         'rust_analyzer'
       }
@@ -66,7 +62,7 @@ return {
       cmp.setup {
         snippet = {
           expand = function(args)
-            require('luasnip').lsp_expand(args.body)
+            luasnip.lsp_expand(args.body)
           end,
         },
         mapping = {
@@ -80,29 +76,11 @@ return {
             behavior = cmp.ConfirmBehavior.Replace,
             select = true,
           },
-          ['<Tab>'] = function(fallback)
-            if cmp.visible() then
-              cmp.select_next_item()
-            elseif luasnip.expand_or_jumpable() then
-              luasnip.expand_or_jump()
-            else
-              fallback()
-            end
-          end,
-          ['<S-Tab>'] = function(fallback)
-            if cmp.visible() then
-              cmp.select_prev_item()
-            elseif luasnip.jumpable(-1) then
-              luasnip.jump(-1)
-            else
-              fallback()
-            end
-          end,
         },
         sources = {
           -- { name = 'copilot' },
           { name = 'nvim_lsp' },
-          -- { name = 'luasnip' },
+          { name = 'luasnip' },
           {
             name = 'buffer',
             option = {
