@@ -6,10 +6,10 @@ return {
       vim.g.tmux_navigator_no_mappings = 1
     end,
     keys = {
-      { "<C-h>", "<cmd>TmuxNavigateLeft<cr>", desc = "Toggle NeoTree" },
-      { "<C-j>", "<cmd>TmuxNavigateDown<cr>", desc = "Toggle NeoTree" },
-      { "<C-k>", "<cmd>TmuxNavigateUp<cr>", desc = "Toggle NeoTree" },
-      { "<C-l>", "<cmd>TmuxNavigateRight<cr>", desc = "Toggle NeoTree" },
+      { "<C-h>", "<cmd>TmuxNavigateLeft<cr>", desc = "tmux navigate left" },
+      { "<C-j>", "<cmd>TmuxNavigateDown<cr>", desc = "tmux navigate down" },
+      { "<C-k>", "<cmd>TmuxNavigateUp<cr>", desc = "tmux navigate up" },
+      { "<C-l>", "<cmd>TmuxNavigateRight<cr>", desc = "tmux navigate right" },
     },
   },
 }
