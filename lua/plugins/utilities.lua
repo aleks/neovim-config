@@ -38,6 +38,19 @@ return {
   },
   {
     "nvim-pack/nvim-spectre",
+    opts = {
+      -- Fix macOS sed behavior https://github.com/nvim-pack/nvim-spectre/issues/118
+      replace_engine = {
+        ["sed"] = {
+          cmd = "sed",
+          args = {
+            "-i",
+            "",
+            "-E",
+          },
+        },
+      },
+    },
     keys = {
       { "<leader>sr", function() require("spectre").open() end, desc = "Replace in files" },
     },
